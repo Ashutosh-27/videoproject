@@ -1,0 +1,181 @@
+.form_body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+.form_container {
+    width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    box-shadow: #00000029 0px 1px 4px;
+    border-radius: .3rem;
+    background-color: white;
+}
+
+
+
+.form_sec1 {
+    background-image: url('../images/stocks.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .3rem;
+}
+
+.form_sec1 .content {
+
+    background: linear-gradient(50deg, rgb(14, 162, 231) 27%, rgba(203, 54, 205, 0.9948354341736695) 100%, rgba(42, 36, 61, 1) 100%);
+    opacity: .92;
+    width: 100%;
+    height: 100%;
+    border-radius: .3rem;
+}
+
+.content .content_logo {
+    padding: 10px;
+    color: white;
+}
+
+.content .content_title {
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.form_sec2 section {
+    margin-bottom: 50px;
+    padding: 17px;
+    color: #1085f1;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+.form_sec2 form {
+    padding: 20px;
+}
+
+.form_sec2 form input {
+    height: 35px;
+    background-color: #f0f0f0;
+    border: none;
+    width: 250px;
+    color: #8a8888;
+    font-size: .7rem;
+    padding-left: 10px;
+
+}
+
+.form_sec2 form input:focus, select:focus {
+    outline: none;
+}
+
+.form_sec2 form span::before {
+    content: "";
+    display: inline-block;
+    background-color: #5572f3;
+    width: 5px;
+    height: 35px;
+    transform: translateY(12px);
+}
+
+.form_sec2 form .select_container {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+}
+
+.form_sec2 form .select_container label {
+    font-size: .8rem;
+    width: 260px;
+}
+
+.form_sec2 form .select_container select {
+    height: max-content;
+    border: none;
+    border-radius: .5rem;
+    background-color: #e4e4e4;
+    padding: 3px;
+    font-size: .7rem;
+}
+
+.form_sec2 form .submit_btn {
+    width: 150px;
+    text-align: center;
+    padding: 0;
+    font-size: .9rem;
+    color: white;
+    border-radius: .8rem;
+    background: #5572f3;
+    margin: auto;
+}
+
+@media screen and (max-width:800px) {
+    .form_container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .form_sec2 form input {
+        width: 225px;
+    }
+
+    .form_sec2 form {
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .form_container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10px;
+    }
+
+    .form_sec1 {
+        height: 10rem;
+        margin-bottom: 2rem;
+    }
+
+    .form_sec2 form {
+        padding: 15px;
+    }
+
+    .form_sec2 form input {
+        width: 200px;
+    }
+
+    form {
+        width: max-content;
+        margin: auto;
+
+    }
+
+    .form_sec2 form .select_container {
+        flex-direction: column;
+    }
+
+}
+
+
+@media screen and (max-width:300px) {
+    .form_sec1 {
+        height: 10rem;
+        width: 260px;
+    }
+}

@@ -1,0 +1,685 @@
+/* /+++++++++++++++++++++++++ Video & Points +++++++++++++++++++++++++ */
+.video_points {
+    width: 800px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.video_container {
+    height: 400px;
+    width: 55%;
+    transform: translateY(.5em);
+}
+
+.video_container .Info {
+    padding: 5px;
+}
+
+.video_container .Info h3 {
+    color: #32a9e5;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.video_container .Info p {
+    font-size: .5rem;
+    color: #555454;
+    font-weight: 600;
+}
+
+.Video {
+    height: 250px;
+    width: 100%;
+    transform: translateY(20px);
+}
+
+.video_holder {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+    border-radius: .5rem;
+}
+
+.play_pause-btn {
+    position: fixed;
+    height: 100%;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+  
+}
+
+.Video:hover .play_pause-btn{
+    opacity: 1;
+    visibility: visible;
+    transition: .3s;
+}
+
+.play_pause-btn.inactive{
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.play_pause-btn.active{
+    opacity: 1;
+    visibility: visible;
+    transition: .3s;
+}
+
+.play_pause-btn button{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    border: 3px solid #03abf8;
+    background: #f6f5f5b7;
+}
+
+
+.points_container {
+    width: 40%;
+    transform: translateY(-4em);
+    position: relative;
+    z-index: 5;
+}
+
+.points_container ul {
+    width: 100%;
+}
+
+.points_container ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5px;
+    width: 100%;
+
+}
+
+.points_container ul li .circle {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #86a0f0;
+    border-radius: 50%;
+    margin: 5px auto;
+}
+
+.points_container ul li .points_body {
+    width: 240px;
+    line-height: 20px;
+}
+
+.points_container ul li .points_body p {
+    font-size: .6rem;
+}
+
+
+
+/* /+++++++++++++++++++++++++ Home Carousel +++++++++++++++++++++++++ */
+.carousel_parent{
+    background-image: url('../images/carousel2.jpg');
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+.carousel_body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(50deg, rgba(14, 162, 231, 0.726) 27%, hsla(299, 60%, 51%, 0.725) 100%, rgba(42, 36, 61, 1) 100%);
+    padding: 10px;
+    height: 100%;
+}
+
+.carousel_title{
+    margin: 1.8rem auto;
+    color: white;
+}
+
+.carousel_container{
+    width: 820px  ;
+    margin: auto;
+}
+
+
+
+.owl-dots{
+    display: none;
+}
+
+.owl-prev{
+    position:absolute;
+    font-size: 50px;
+    left: -5%;
+    top: 35%;
+}
+.owl-next{
+    position:absolute;
+    font-size: 50px;
+    right: -5%;
+    top: 35%;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next{
+    font-size: 50px;
+}
+
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel .owl-nav button.owl-next:hover{
+    background-color: transparent;
+    color: black;
+}
+
+.owl-prev span,
+.owl-next span{
+    color: white;
+}
+
+.carousel_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+    height: 300px;
+}
+
+
+
+.carousel_item_Info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 45%;
+}
+.carousel_item_Info .item_Info_title{
+    color: white;
+    font-size: .73em;
+}
+
+.carousel_item_Info .item_Info_list{
+    padding: 3px;
+}
+
+.carousel_item_Info .item_Info_list li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    width: 130px;
+    font-size: .6em;
+    color: white;
+}
+
+.carousel_item_Info .item_Info_list li span{
+    text-align: left;
+    width: 92%;
+    margin-left: 4px;
+}
+
+.carousel_item_Info .item_Info_footer{
+    color: white;
+    font-size: .7em;
+}
+
+
+/* /+++++++++++++++++++++++++ Courses +++++++++++++++++++++++++ */
+
+
+.courses {
+    width: 800px;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.courses_Info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    padding: 10px;
+}
+
+.courses_Info h4 {
+    font-size: 1.2em;
+}
+
+.courses_Info span,
+.courses_cards .card span {
+    display: block;
+    font-size: .6em;
+    color: #555454;
+    font-weight: 600;
+}
+
+
+
+.courses_cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem auto;
+}
+
+.courses_cards .card {
+    width: 350px;
+    height: 450px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+
+.card_info {
+    height: 15%;
+}
+
+.card_info h4 {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.card .card_container {
+    height: 90%;
+    width: 95%;
+    margin: auto;
+    text-align: left;
+    padding: 5px 15px;
+    border-radius: .4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f6f6f6;
+    color: #555454;
+}
+
+.card .card_container ul {
+    font-size: .65em;
+    font-weight: 500;
+    width: 100%;
+    line-height: 25px;
+}
+
+.card .card_container button {
+    transform: translateY(-10px);
+
+}
+
+.courses_Info button,
+.card_container button {
+    background-color: #7492ec;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    font-size: .6em;
+    font-weight: 600;
+    width: 150px;
+    height: 35px;
+}
+
+.courses_Info button {
+    margin-top: 1rem;
+    padding: 5px 10px;
+    width: max-content;
+    height: 30px;
+}
+
+
+
+/* /+++++++++++++++++++++++++ Community +++++++++++++++++++++++++ */
+.community {
+    background-image: url('../images/carousel1.jpg');
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 350px;
+}
+
+.community_body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(50deg, rgba(14, 162, 231, 0.726) 27%, hsla(299, 60%, 51%, 0.725) 100%, rgba(42, 36, 61, 1) 100%);
+    padding: 10px;
+    height: 100%;
+
+}
+
+.community_body .community_Info {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+}
+
+.community_Info div h4 {
+    font-family: 2rem;
+    font-weight: 500;
+}
+
+.community_Info div span {
+    display: block;
+    font-size: .6em;
+    margin-top: .5rem;
+    width: 300px;
+
+}
+
+.community_Info .join_now {
+    display: block;
+    font-size: .6rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.community_Info .join_now i {
+    font-size: 1.5rem;
+    transform: translateY(5px);
+    transition: transform .3s;
+}
+
+.community_Info .join_now:hover i {
+    transform: translateY(8px);
+    transition: transform .3s;
+}
+
+/* /+++++++++++++++++++++++++ Founders +++++++++++++++++++++++++ */
+.founders{
+    width: 800px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.founders h3{
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #424141;
+    font-weight: 1.5rem;
+    font-weight: 700;
+}
+
+.founders_card_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.founders_card_item{
+    width: 200px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: .3rem;
+}
+
+.founders_card_item img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: block;
+    margin-top: -20px;
+}
+
+.founders_card_item span{
+    display: block;
+    text-align: center;
+}
+
+.founders_card_item span .founder_name{
+    font-size: 1rem;
+    color: #3b3a3a;
+    font-weight: 500;
+}
+.founders_card_item span .founder_social{
+    font-size: 1rem;
+    color: #949494;
+    margin-top:5px;
+    
+}
+
+.founders_card_item span .founder_social i{
+    margin: 0 3px;
+}
+
+/* /+++++++++++++++++++++++++ Explore +++++++++++++++++++++++++ */
+.explore {
+    background-color: #f6f5f5;
+    padding: 30px;
+}
+
+.explore h3 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: #20a8ec;
+    font-weight: 500;
+}
+
+.explore_cards_container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    margin: auto;
+}
+
+
+.explore_card {
+    width: 250px;
+    height: 300px;
+    color: white;
+    background: linear-gradient(0deg, rgba(14, 162, 231, 0.911) 27%, hsla(299, 60%, 51%, 0.87) 100%, rgba(42, 36, 61, 1) 100%);
+    border-radius: .2rem;
+}
+
+.explore_card h4 {
+    text-align: center;
+    margin: .8rem auto;
+    font-size: .8em;
+    font-weight: 500;
+}
+
+.explore_card ul {
+    width: 90%;
+    margin: auto;
+    font-size: .6em;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+
+
+/* /+++++++++++++++++++++++++ Demat +++++++++++++++++++++++++ */
+.demat {
+    padding: 1rem;
+}
+
+.demat h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.demat .demat_card_container {
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 30px;
+    margin: auto;
+
+}
+
+.demat_card_container .demat_card {
+    width: 260px;
+    border-radius: .2em;
+    padding: 10px;
+    background-color: #f8f5f5;
+}
+
+.demat_card_container .demat_card span {
+    display: block;
+}
+
+.demat_card .demat_card_title {
+    color: #1ea9ee;
+    font-weight: 600;
+    text-align: center;
+    margin: 5px auto;
+}
+
+.demat_card .demat_card_title img{
+    width: 30px;
+    margin: 0 6px;
+    transform: translateY(7px);
+}
+
+.demat_card .demat_card_info {
+    font-size: .6em;
+    text-align: center;
+    margin: 5px auto;
+    color: #555454;
+}
+
+.demat_card .demat_card_btn {
+    width: max-content;
+    margin: 10px auto;
+}
+
+.demat_card .demat_card_btn button {
+    background-color: #7492ec;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    font-size: .6em;
+    font-weight: 600;
+    width: 150px;
+    height: 35px;
+}
+
+
+
+
+/* /+++++++++++++++++++++++++ Media Queries +++++++++++++++++++++++++ */
+@media screen and (max-width:900px) {
+
+    /* ++++++++++++ Video & Points ++++++++++ */
+    .video_points{
+        width: 100%;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .video_container{
+        transform: translateY(0);
+        width: 100%;
+    }
+
+    .points_container{
+        transform: translateY(20px);
+        width: 350px;
+    }
+
+
+    /* +++++++++ Home Carousel +++++++++ */
+    .carousel_container{
+        width: 95%;
+    }
+
+    /* ++++++++++++ Courses ++++++++++++ */
+    .courses {
+        width: 100%;
+        
+    }
+
+    .courses_cards {
+        flex-direction: column;
+    }
+
+    .courses_cards .card{
+        width: 95%;
+        margin-bottom: 2rem;
+
+    }
+
+    
+    /* ++++++++++ Founders +++++++++++++ */
+    .founders{
+        width: 100%;
+    }
+
+    .founders_card_item{
+        margin: 1rem auto;
+    }
+
+    /* ++++++++++ Explore +++++++++++++ */
+    .explore_cards_container{
+        width: 95%;
+        justify-content: center;
+    }
+
+    .explore_card {
+        margin-bottom: 2rem;
+    }
+
+    /* ++++++++++++ Demat ++++++++++++ */
+    .demat .demat_card_container{
+        width: 100%;
+        justify-content: center;
+        
+    }
+
+    .demat_card_container .demat_card{
+        margin-bottom: 2rem;
+    }
+}
+
+
+@media screen and (max-width:400px) {
+    .points_container{
+        transform: translateY(20px);
+        width: 100%;
+    }
+}
