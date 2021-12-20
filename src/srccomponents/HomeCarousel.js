@@ -48,7 +48,7 @@ function HomeCarousel() {
 
                 <div className='carousel_item'>
                     <div className='carousel_item_img'>
-                        <img src={ItemImg1}></img>
+                        <img src={ItemImg1} alt='carouselImg'></img>
                     </div>
                     <div className='carousel_item_Info'>
                         <sapn className='item_Info_title'>Introduction to stock Market</sapn>
@@ -72,7 +72,7 @@ function HomeCarousel() {
 
                 <div className='carousel_item'>
                     <div className='carousel_item_img'>
-                        <img src={ItemImg2}></img>
+                        <img src={ItemImg2} alt='carouselImg'></img>
                     </div>
                     <div className='carousel_item_Info'>
                         <sapn className='item_Info_title'>Introduction to stock Market</sapn>
@@ -98,7 +98,7 @@ function HomeCarousel() {
 
                <div className='carousel_item'>
                     <div className='carousel_item_img'>
-                        <img src={ItemImg1}></img>
+                        <img src={ItemImg1} alt='carouselImg'></img>
                     </div>
                     <div className='carousel_item_Info'>
                         <sapn className='item_Info_title'>Introduction to stock Market</sapn>
@@ -123,7 +123,7 @@ function HomeCarousel() {
 
                 <div className='carousel_item'>
                     <div className='carousel_item_img'>
-                        <img src={ItemImg2}></img>
+                        <img src={ItemImg2} alt='carouselImg'></img>
                     </div>
                     <div className='carousel_item_Info'>
                         <sapn className='item_Info_title'>Introduction to stock Market</sapn>
@@ -149,7 +149,7 @@ function HomeCarousel() {
 
                <div className='carousel_item'>
                     <div className='carousel_item_img'>
-                        <img src={ItemImg1}></img>
+                        <img src={ItemImg1} alt='carouselImg'></img>
                     </div>
                     <div className='carousel_item_Info'>
                         <sapn className='item_Info_title'>Introduction to stock Market</sapn>
@@ -174,7 +174,7 @@ function HomeCarousel() {
 
                 <div className='carousel_item'>
                     <div className='carousel_item_img'>
-                        <img src={ItemImg2}></img>
+                        <img src={ItemImg2} alt='carouselImg'></img>
                     </div>
                     <div className='carousel_item_Info'>
                         <sapn className='item_Info_title'>Introduction to stock Market</sapn>
@@ -199,7 +199,7 @@ function HomeCarousel() {
 
                 <div className='carousel_item'>
                     <div className='carousel_item_img'>
-                        <img src={ItemImg1}></img>
+                        <img src={ItemImg1} alt='carouselImg'></img>
                     </div>
                     <div className='carousel_item_Info'>
                         <sapn className='item_Info_title'>Introduction to stock Market</sapn>
