@@ -211,7 +211,7 @@ function Home() {
                         <div className='founders_card_item' >
                             <img src={Founder1} alt='Fonder'></img>
                             <span className='card_info'>
-                                <span className='founder_name'>Peter Parker</span>
+                                <span className='founder_name'>Dave Make</span>
                                 <span className='founder_social'>
                                     <i class='bx bxl-twitter'></i>
                                     <i class='bx bxl-linkedin' ></i>
@@ -224,7 +224,7 @@ function Home() {
                         <div className='founders_card_item' >
                             <img src={Founder2} alt='Founder'></img>
                             <span className='card_info'>
-                                <span className='founder_name'>Peter Parker</span>
+                                <span className='founder_name'>Kate Dyne</span>
                                 <span className='founder_social'>
                                     <i class='bx bxl-twitter'></i>
                                     <i class='bx bxl-linkedin' ></i>
@@ -236,7 +236,7 @@ function Home() {
                         <div className='founders_card_item' >
                             <img src={Founder3} alt='Founder'></img>
                             <span className='card_info'>
-                                <span className='founder_name'>Peter Parker</span>
+                                <span className='founder_name'>John Doe</span>
                                 <span className='founder_social'>
                                     <i class='bx bxl-twitter'></i>
                                     <i class='bx bxl-linkedin' ></i>
