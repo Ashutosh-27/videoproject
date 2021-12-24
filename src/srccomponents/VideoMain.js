@@ -1,5 +1,5 @@
 import React from 'react'
-import HomeVideo from '../images/VegetavsBroly.mp4'
+import HomeVideo from '../images/Video.mp4'
 import Poster from '../images/carousel1.jpg'
 import {useRef , useState} from 'react'
 function VideoMain() {
